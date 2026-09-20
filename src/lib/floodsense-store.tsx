@@ -16,7 +16,7 @@ const FloodSenseContext = createContext<Store | null>(null);
 const STORAGE_KEY = "floodsense-state-v1";
 
 export function FloodSenseProvider({ children }: { children: ReactNode }) {
-  const [locationId, setLocationId] = useState<string>(LOCATIONS[0].id);
+  const [locationId, setLocationId] = useState<string>(LOCATIONS[0]!.id);
   const [checked, setChecked] = useState<string[]>([]);
 
   useEffect(() => {

@@ -128,7 +128,7 @@ function Dashboard() {
                 Demo alert for {location.name}
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                {alerts[0].title} — {alerts[0].action}
+                {alerts[0]!.title} — {alerts[0]!.action}
               </p>
               <Link to="/alerts" className="mt-2 inline-block text-sm font-medium text-primary hover:underline">
                 View alert center →

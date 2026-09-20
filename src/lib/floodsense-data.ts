@@ -111,8 +111,8 @@ export const LOCATIONS: FloodLocation[] = [
   },
 ];
 
-export function getLocation(id: string) {
-  return LOCATIONS.find((l) => l.id === id) ?? LOCATIONS[0];
+export function getLocation(id: string): FloodLocation {
+  return LOCATIONS.find((l) => l.id === id) ?? (LOCATIONS[0] as FloodLocation);
 }
 
 export const riskStyles: Record<
