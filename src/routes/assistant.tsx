@@ -21,7 +21,7 @@ export const Route = createFileRoute("/assistant")({
       },
     ],
   }),
-  component: Assistant;
+  component: Assistant,
 });
 
 type Msg = { role: "user" | "bot"; text: string; bullets?: string[] };
